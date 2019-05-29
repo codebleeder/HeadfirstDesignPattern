@@ -1,12 +1,14 @@
 ﻿using System;
 
+
 namespace HeadfirstDesignPattern
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Chapter4_Factory.Chapter4_Tests.PizzaStoreTest();
+            Console.ReadLine();
         }
     }
 }
