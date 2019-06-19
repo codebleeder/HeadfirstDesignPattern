@@ -78,6 +78,14 @@
 </tr>
 
 <tr>
+    <td>9.1</td>
+    <td>Iterator</td>
+    <td>
+        The Iterator Pattern provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
+    </td>
+</tr>
+
+<tr>
     <td></td>
     <td></td>
     <td>
