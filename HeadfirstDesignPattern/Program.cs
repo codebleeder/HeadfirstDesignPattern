@@ -7,7 +7,7 @@ namespace HeadfirstDesignPattern
     {
         static void Main(string[] args)
         {
-            Chapter9_1_Iterator.Chapter9_1Tests.Test1();
+            UsingCSharpFeatures.Chapter9_1_Iterator.Chapter9_1Tests.Test1();
             Console.ReadLine();
         }
     }
