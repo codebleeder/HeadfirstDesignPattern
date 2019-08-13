@@ -23,6 +23,8 @@ namespace HeadfirstDesignPattern.Chapter9_1_Iterator
             PrintMenu(pancakeIterator);
             Console.WriteLine("LUNCH");
             PrintMenu(dinerIterator);
+            Console.WriteLine("DINNER");
+
         }
 
         private void PrintMenu(Iterator iterator)

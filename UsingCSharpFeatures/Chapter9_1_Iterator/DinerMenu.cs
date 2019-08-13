@@ -5,7 +5,7 @@ using System.Text;
 
 namespace UsingCSharpFeatures.Chapter9_1_Iterator
 {
-    public class DinerMenu: IEnumerable
+    public class DinerMenu: IMenu
     {
         const int MAX_ITEMS = 6;
         private int NumberOfItems = 0;
@@ -49,5 +49,10 @@ namespace UsingCSharpFeatures.Chapter9_1_Iterator
         {
             return new DinerMenuIterator(MenuItems);
         }
+
+        //IEnumerator IEnumerable.GetEnumerator()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

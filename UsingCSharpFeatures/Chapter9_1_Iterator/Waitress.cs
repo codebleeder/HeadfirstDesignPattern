@@ -9,21 +9,27 @@ namespace UsingCSharpFeatures.Chapter9_1_Iterator
     {
         PancakeHouseMenu PancakeHouseMenu;
         DinerMenu DinerMenu;
-
-        public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu)
+        CafeMenu CafeMenu;
+        //List<IEnumerable> Menus;
+        public Waitress(PancakeHouseMenu pancakeHouseMenu, DinerMenu dinerMenu, CafeMenu cafeMenu)
         {
             PancakeHouseMenu = pancakeHouseMenu;
             DinerMenu = dinerMenu;
+            CafeMenu = cafeMenu;
+            //Menus = menus;
         }
 
         public void PrintMenu()
         {
             var pancakeIterator = PancakeHouseMenu.CreateIterator();
             var dinerIterator = DinerMenu.GetEnumerator();
+            var cafeIterator = CafeMenu.GetEnumerator();
             Console.WriteLine("MENU\n-------\nBREAKFAST");
             PrintMenu(pancakeIterator);
             Console.WriteLine("LUNCH");
             PrintMenu(dinerIterator);
+            Console.WriteLine("DINNER");
+            PrintMenu(cafeIterator);
         }
 
         private void PrintMenu(IEnumerator iterator)

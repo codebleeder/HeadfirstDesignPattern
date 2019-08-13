@@ -28,7 +28,14 @@ namespace UsingCSharpFeatures.Chapter9_1_Iterator
             }
         }
 
-        public object Current => Items[Position];
+        public MenuItem Current => Items[Position];
+
+        object IEnumerator.Current => Items[Position];
+
+        //public void Dispose()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public bool MoveNext()
         {
