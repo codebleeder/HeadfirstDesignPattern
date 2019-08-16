@@ -49,5 +49,10 @@ namespace HeadfirstDesignPattern.Chapter9_2_Composite
         {
             return new MenuIterator(MenuComponents);
         }
+
+        public override IEnumerator GetCompositeEnumerator()
+        {
+            return new CompositeEnumerator(MenuComponents.GetEnumerator());
+        }
     }
 }

@@ -76,7 +76,8 @@ namespace HeadfirstDesignPattern.Chapter9_2_Composite
                 ));
             cafeMenu.Add(dessertMenu);
             var waitress = new Waitress(allMenus);
-            waitress.Print();
+            //waitress.Print();
+            waitress.PrintVegetarian();
         }
     }
 }

@@ -28,5 +28,7 @@ namespace HeadfirstDesignPattern.Chapter9_2_Composite
             var isVeg = IsVegetarian ? "(v)" : " ";
             Console.WriteLine($"{Name} {isVeg} {Price} --- {Description}");
         }
+
+        
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,5 +20,10 @@ namespace HeadfirstDesignPattern.Chapter9_2_Composite
         virtual public double Price => throw new NotSupportedException();
         virtual public bool IsVegetarian => throw new NotSupportedException();
         public abstract void Print();
+
+        public virtual IEnumerator GetCompositeEnumerator()
+        {
+            return new NullEnumerator();
+        }
     }
 }
