@@ -86,6 +86,22 @@
 </tr>
 
 <tr>
+    <td>9.2</td>
+    <td>Composite</td>
+    <td>
+    The Composite Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly.
+    </td>
+</tr>
+
+<tr>
+    <td>10</td>
+    <td>State</td>
+    <td>
+    The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+    </td>
+</tr>
+
+<tr>
     <td></td>
     <td></td>
     <td>
