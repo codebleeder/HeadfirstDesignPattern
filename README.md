@@ -100,7 +100,13 @@
     The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
     </td>
 </tr>
-
+<tr>
+    <td>11</td>
+    <td>Proxy</td>
+    <td>
+    template
+    </td>
+</tr>
 <tr>
     <td></td>
     <td></td>

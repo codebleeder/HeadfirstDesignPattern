@@ -7,7 +7,7 @@ namespace HeadfirstDesignPattern
     {
         static void Main(string[] args)
         {
-            Chapter9_2_Composite.Chapter9_2Tests.Test1();
+            Chapter11_Proxy.Chapter11_Tests.Test1();
             Console.ReadLine();
         }
     }
