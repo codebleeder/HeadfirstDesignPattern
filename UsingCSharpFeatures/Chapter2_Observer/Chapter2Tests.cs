@@ -8,8 +8,8 @@ namespace UsingCSharpFeatures.Chapter2_Observer
     {
         public static void WeatherDataTest()
         {
-            var weatherDataMonitor = new WeatherDataMonitor();
-            var conditionsDisplay = new CurrentConditionsDisplay();
+            var weatherDataMonitor = new WeatherDataMonitor(); // Observer
+            var conditionsDisplay = new CurrentConditionsDisplay(); // Observable
             conditionsDisplay.Subscribe(weatherDataMonitor);
             weatherDataMonitor.SetMeasurements(80, 65, 30.4f);
             weatherDataMonitor.SetMeasurements(82, 70, 29.4f);
