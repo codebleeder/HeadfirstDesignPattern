@@ -114,11 +114,11 @@
     A pattern of patterns working together
     </td>
 </tr>
-<tr>
+<!-- <tr>
     <td></td>
     <td></td>
     <td>
     template
     </td>
-</tr>
+</tr> -->
 </table>
