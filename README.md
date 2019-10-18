@@ -104,7 +104,14 @@
     <td>11</td>
     <td>Proxy</td>
     <td>
-    template
+    The Proxy Pattern provides a surrogate or placeholder for another object to control access to it. (Not implemented in this project)
+    </td>
+</tr>
+<tr>
+    <td>12</td>
+    <td>Compound</td>
+    <td>
+    A pattern of patterns working together
     </td>
 </tr>
 <tr>
