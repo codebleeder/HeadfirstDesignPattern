@@ -8,15 +8,19 @@ namespace UsingCSharpFeatures.Chapter2_Observer
     {
         private IDisposable Unsubscriber;
         private WeatherData WeatherData;
-
+        public string Name { get; set; }
+        public CurrentConditionsDisplay(string name)
+        {
+            Name = name;
+        }
         public void Display()
         {
-            Console.WriteLine($"Current Conditions: {WeatherData.Temperature} deg F, Humidity of {WeatherData.Humidity}% ");
+            Console.WriteLine($"{Name} Current Conditions: {WeatherData.Temperature} deg F, Humidity of {WeatherData.Humidity}% ");
         }
 
         public void OnCompleted()
         {
-            Console.WriteLine("Additional temperature and humidity data will not be transmitted.");
+            Console.WriteLine($"{Name}: Additional temperature and humidity data will not be transmitted.");
         }
 
         public void OnError(Exception error)
